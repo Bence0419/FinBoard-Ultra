@@ -1,0 +1,184 @@
+###############################################################################
+# .NET / C#
+###############################################################################
+
+# Build output
+[Bb]in/
+[Oo]bj/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet restore cache (local feed)
+*.nuget.props
+*.nuget.targets
+
+# MSBuild
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Publish output
+[Pp]ublish/
+PublishProfiles/
+
+# Test results and coverage
+TestResults/
+[Cc]overage/
+coverage.xml
+coverage.json
+*.coverage
+*.coveragexml
+lcov.info
+BenchmarkDotNet.Artifacts/
+
+###############################################################################
+# Visual Studio
+###############################################################################
+
+.vs/
+*.rsuser
+*.cache
+*.VC.db
+*.VC.opendb
+*.sdf
+*.opensdf
+*.dbmdl
+*.jfm
+ipch/
+_ReSharper*/
+*.DotSettings.user
+*.pidb
+*.svd
+*.pdb
+*.ilk
+*.meta
+*.iobj
+*.ipdb
+
+# Scaffolding
+ScaffoldingReadMe.txt
+
+# DocProject
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+###############################################################################
+# JetBrains Rider / ReSharper
+###############################################################################
+
+.idea/
+*.sln.iml
+_ReSharper*/
+*.ReSharper
+*.resharper
+
+###############################################################################
+# VS Code
+###############################################################################
+
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+
+###############################################################################
+# Entity Framework Core
+###############################################################################
+
+# Keep migration C# files, but ignore the snapshot if generated
+# (remove the line below if you prefer to track the snapshot)
+# *ModelSnapshot.cs
+
+###############################################################################
+# SQLite (project database)
+###############################################################################
+
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+###############################################################################
+# Secrets and configuration overrides
+###############################################################################
+
+# Local overrides of appsettings — may contain connection strings, API keys
+appsettings.Local.json
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+.env
+.env.*
+!.env.example
+
+###############################################################################
+# Windows OS artefacts
+###############################################################################
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+[Dd]esktop.ini
+
+###############################################################################
+# macOS OS artefacts (for cross-platform teams)
+###############################################################################
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+###############################################################################
+# Linux OS artefacts
+###############################################################################
+
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+###############################################################################
+# Logs and temporary files
+###############################################################################
+
+*.log
+*.tmp
+*.temp
+logs/
+log/
+
+###############################################################################
+# Crash dumps and profiling output
+###############################################################################
+
+*.dmp
+*.mdmp
+*.diagsession
+*.psess
+*.vsp
+*.vspx
+*.sap
