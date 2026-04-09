@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FinBoardUltra.Application/FinBoardUltra.Application.csproj" />
+    <Project Path="src/FinBoardUltra.ConsoleApp/FinBoardUltra.ConsoleApp.csproj" />
+    <Project Path="src/FinBoardUltra.Domain/FinBoardUltra.Domain.csproj" />
+    <Project Path="src/FinBoardUltra.Infrastructure/FinBoardUltra.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FinBoardUltra.Tests.Integration/FinBoardUltra.Tests.Integration.csproj" />
+    <Project Path="tests/FinBoardUltra.Tests.Unit/FinBoardUltra.Tests.Unit.csproj" />
+  </Folder>
+</Solution>
