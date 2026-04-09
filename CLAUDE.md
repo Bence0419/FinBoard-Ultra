@@ -71,6 +71,13 @@ Append every settled decision here so context is not lost between sessions.
 |---|---|---|
 | — | Language: C# | Developer preference |
 | — | Native desktop target | First deliverable is the native wrapper |
+| 2026-04-09 | Target framework: net9.0 (not net8.0) | .NET 8 not installed on dev machine; only .NET 9 and 10 available |
+| 2026-04-09 | ORM: EF Core 9 + SQLite (Microsoft.EntityFrameworkCore.Sqlite 9.0.14) | Embedded, no server process; appropriate for standalone desktop app |
+| 2026-04-09 | Password hashing: BCrypt.Net-Next, work factor 12 | Adaptive hash with salt; work factor 12 balances security and registration speed |
+| 2026-04-09 | AppDbContextFactory must be public (not internal) | EF Core design-time tooling discovers factory via reflection; internal prevents migration generation |
+| 2026-04-09 | AuditLog.UserId is a plain nullable column, not a FK | Audit rows must survive user deletion; a FK would block or cascade-delete audit history |
+| 2026-04-09 | No global HasQueryFilter for IsDeleted | Explicit per-query filtering avoids hidden behaviour and makes each query's intent clear |
+| 2026-04-09 | RecordFilter query type lives in Domain, not Application | IFinancialRecordRepository (Domain) takes it as a parameter; placing it in Application would create a circular dependency |
 
 ---
 
