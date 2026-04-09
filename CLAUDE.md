@@ -71,3 +71,23 @@ Append every settled decision here so context is not lost between sessions.
 |---|---|---|
 | — | Language: C# | Developer preference |
 | — | Native desktop target | First deliverable is the native wrapper |
+
+---
+
+## How we build this
+
+Follow these steps at the start of every development session, in order.
+
+1. **Read the three reference documents first.** Read `CLAUDE.md`, `ARCHITECTURE.md`, and `IMPLEMENTATION_PLAN.md` before writing any code. Do not rely on memory from a previous session.
+
+2. **Identify the current task.** Check the progress tracker in `IMPLEMENTATION_PLAN.md`. Find the first phase that is not marked Complete. Within that phase, find the first task that has not been marked done. That task is the only thing to work on this session.
+
+3. **Work on exactly that task and no other.** Do not start a later task, do not refactor adjacent code, do not jump ahead because a future task looks simple. One task at a time.
+
+4. **Mark each task done immediately after completing it.** Update `IMPLEMENTATION_PLAN.md` to reflect the completed task before moving to the next one. Do not batch updates.
+
+5. **Run the phase verification step before closing a phase.** When the last task in a phase is done, run the exact command listed under that phase's verification section. Confirm the output matches what is expected. Only then mark the phase Complete in the progress tracker.
+
+6. **Append new decisions to the decisions log before ending the session.** If any implementation choice was made that is not already recorded in `CLAUDE.md` — a library version pinned, a pattern adopted, a constraint discovered — add a row to the decisions log at the bottom of this file. Do not let decisions live only in code or commit messages.
+
+7. **Never leave a phase partially complete without updating the progress tracker.** If a session ends mid-phase, update the tracker to *In progress* and add a note identifying the last completed task. The next session must be able to resume without reading git history.
